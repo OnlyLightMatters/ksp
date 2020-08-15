@@ -280,7 +280,8 @@
         ctx.lineTo(x, PLOT_HEIGHT + 1 + TIC_LENGTH);
       }
       ctx.stroke();
-      ctx.font = 'italic 12pt "Helvetic Neue",Helvetica,Arial,sans serif';
+//      ctx.font = 'italic 12pt "Helvetic Neue",Helvetica,Arial,sans serif';
+      ctx.font = 'italic 12pt "Gilroy-Light",Arial,sans serif';
       ctx.textAlign = 'center';
       ctx.textBaseline = 'middle';
       ctx.fillStyle = 'black';
