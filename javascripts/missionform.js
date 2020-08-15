@@ -52,7 +52,10 @@
         originGroup = $('<optgroup>');
         referenceBodyGroup = $('<optgroup>');
         listBody(body, originGroup, referenceBodyGroup);
-        addPlanetGroup(name, originGroup, originSelect, 2);
+
+        // Changed to 1 to see Celestial Bodies with only 1 moon as systems
+        addPlanetGroup(name, originGroup, originSelect, 1);
+        
         addPlanetGroup(name, referenceBodyGroup, referenceBodySelect, 1);
       }
     }
@@ -114,7 +117,7 @@
         };
       })(this));
       this.setOrigin('Earth');
-      this.setDestination('Duna');
+      this.setDestination('Mars');
       $('#originAddBtn').click((function(_this) {
         return function(event) {
           return _this.celestialBodyForm.add(null, function(name) {
